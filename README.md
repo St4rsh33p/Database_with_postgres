@@ -16,39 +16,43 @@ For this project we are using the following database schema
 
 ## Table Songplays
 
-- ![image](https://user-images.githubusercontent.com/107310236/205116093-b08b3df3-bc47-4886-a6e8-99a2655d0036.png)
+![carbon](https://user-images.githubusercontent.com/107310236/205324482-68db2877-67d8-4911-8fae-a4b9df0ebab9.png)
+
 
 ## Table Artists
   
--  ![image](https://user-images.githubusercontent.com/107310236/205115853-a6c890c8-ed22-422c-bef1-dbf1a35b1b21.png)  
+![carbon (1)](https://user-images.githubusercontent.com/107310236/205324652-7fa1ed0a-31cd-4b2a-8122-ea8a2537b336.png)
+
 
 ## Table Songs
 
-- ![image](https://user-images.githubusercontent.com/107310236/205116330-9bcd2228-c181-47bf-83b4-f08662a8d187.png)
+![carbon (2)](https://user-images.githubusercontent.com/107310236/205324745-5cfdaca1-59f2-4c21-b506-1a9fc1a85464.png)
+
 
 ## Table Time
 
-- ![image](https://user-images.githubusercontent.com/107310236/205116429-631af852-7788-4a11-9e7c-bd89fa9776e0.png)
+![carbon (3)](https://user-images.githubusercontent.com/107310236/205324815-bebff0d9-23eb-4ddc-aad7-666402527ab8.png)
 
 ## Time Users
 
-- ![image](https://user-images.githubusercontent.com/107310236/205116507-0da5211e-6ebe-4548-872b-2a17f6032931.png)
+
+![carbon (4)](https://user-images.githubusercontent.com/107310236/205325232-acfc8884-eb09-46de-9e87-283045aa778d.png)
 
 
 
-## Process to make it work
+# Process to make it work
 
-### Datasets
+## Datasets
 
 To make it work we are working with two datasets(<strong>song_data<strong> & <strong>log_data<strong>)
 
-### Database
+## Database
 
 - This prject give us few scripts to complete. The one we are going to use to create the database is <strong>create_tables.py<strong>, which will import all the queries which are stored in <strong>sql_queries<strong> and execute them.
   
 - All the statements have Primar Keys which will be assigned from the data into the ETL process.
  
-### ETL 
+## ETL 
   
 - This scripts provides the functions to make work the ETL process.
   
@@ -56,33 +60,35 @@ To make it work we are working with two datasets(<strong>song_data<strong> & <st
   
 For each datasets we have different functions which will extract the data and insert them into the different tables.
 
-#### Songs Dataset
+### Songs Dataset
   
   Execute the function process_song_file on every .json file located on the "data/song_data" folder. This will extract data for the songs and artists tables
   
-  ![image](https://user-images.githubusercontent.com/107310236/205120497-a315ebd9-05de-4ffd-9a79-a3a4bf02b7d6.png)
+![carbon (5)](https://user-images.githubusercontent.com/107310236/205325891-f02be64a-3e46-4072-bdc6-b150cf33164a.png)
 
-#### Log Dataset
-  To extract the data from this dataset we will need to do something else:
+### Log Dataset
+ - To extract the data from this dataset we will need to do something else:
 
-  ![image](https://user-images.githubusercontent.com/107310236/205300931-4aeebf03-7687-4e2e-8254-90546b58ed00.png)
+![carbon (9)](https://user-images.githubusercontent.com/107310236/205326561-6d15e3bb-83de-4e47-9180-f3b1e9124867.png)
+
+- To make this easier to process we convert the timestamp value into datatime:
   
-  to make this easier to process we convert the timestamp value into datatime:
-  
-  ![image](https://user-images.githubusercontent.com/107310236/205301085-cfb3a3d5-0477-4002-b297-3286165ebcf5.png)
-  
-  to extract the data for the "time" table we use this method:
-  
-  ![image](https://user-images.githubusercontent.com/107310236/205301398-6f568b01-91bb-4b67-b963-816c880ee85d.png)
-  
-  and to obtain data for the "users" table we'll use this method:
-  
-  ![image](https://user-images.githubusercontent.com/107310236/205301638-746398cf-0f29-40aa-b3e1-323ea12bef4c.png)
+![carbon (8)](https://user-images.githubusercontent.com/107310236/205326449-7d4b883e-f8dd-4f65-8e45-01b584b10e69.png)
 
 
-  Once you have all this steps done, now comes the final step, we have to use the data provided by the "log" json fles and do a search to extract the "song_id" and the "artist_id":
+- To extract the data for the "time" table we use this method:
   
-  ![image](https://user-images.githubusercontent.com/107310236/205302201-d65c4abe-5241-4273-ab85-84986c4b9df4.png)
+  ![carbon (10)](https://user-images.githubusercontent.com/107310236/205328223-2d36e384-fe64-4107-b878-ac9d19a3dbdc.png)
+
+- And to obtain data for the "users" table we'll use this method:
+  
+  ![carbon (11)](https://user-images.githubusercontent.com/107310236/205328443-0ab121df-2c0a-415f-9eaa-955bffd217ce.png)
+
+
+
+-  Once you have all this steps done, now comes the final step, we have to use the data provided by the "log" json fles and do a search to extract the "song_id" and the "artist_id":
+  
+  ![carbon (12)](https://user-images.githubusercontent.com/107310236/205328710-025b1076-1ea0-45e3-9613-b15aa69ef7c2.png)
 
 
 ## ETL PROCESS
