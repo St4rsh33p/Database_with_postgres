@@ -78,11 +78,11 @@ For each datasets we have different functions which will extract the data and in
 
 - To extract the data for the "time" table we use this method:
   
-  ![carbon (10)](https://user-images.githubusercontent.com/107310236/205328223-2d36e384-fe64-4107-b878-ac9d19a3dbdc.png)
+ ![carbon (10)](https://user-images.githubusercontent.com/107310236/205328223-2d36e384-fe64-4107-b878-ac9d19a3dbdc.png)
 
 - And to obtain data for the "users" table we'll use this method:
   
-  ![carbon (11)](https://user-images.githubusercontent.com/107310236/205328443-0ab121df-2c0a-415f-9eaa-955bffd217ce.png)
+ ![carbon (11)](https://user-images.githubusercontent.com/107310236/205328443-0ab121df-2c0a-415f-9eaa-955bffd217ce.png)
 
 
 
