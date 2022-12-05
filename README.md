@@ -93,5 +93,5 @@ For each datasets we have different functions which will extract the data and in
 
 ## ETL PROCESS
 
-  Once we have created the database and the tables we can start ETL PROCESS.
+  Once we have created the database and the tables we can start the ETL PROCESS.
   
